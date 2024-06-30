@@ -72,3 +72,12 @@ This repository contains the source code for Deepak Prajapat's personal portfoli
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+```javascript
+  const x = 1;
+  function sum (x,y=5){
+    return x+y
+  }
+  const returnSum = sum(2);
+  console.log(returnSum)
+```
