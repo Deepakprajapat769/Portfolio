@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deepak Prajapat</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            perspective: 1000px;
-        }
-        .card {
-            transition: transform 0.5s;
-            transform-style: preserve-3d;
-        }
-        .card:hover {
-            transform: rotateY(10deg) rotateX(10deg);
-        }
-    </style>
+    <title>My Personal Portfolio Website ✨</title>
+    <link rel="styleSheet" href="styles.css">
 </head>
+
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <h1>Deepak Prajapat</h1>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="collapse navbar-collapse justify-content-center">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="header-text">
+                <p>MERN Developer</p>
+                <h1>Hi, I'm <span>Deepak</span> <br>Prajapat from Indore</h1>
             </div>
-        </nav>
-    </header>
-    <section id="about" class="container my-5">
-        <h2>About Me</h2>
-        <p>Brief description about yourself and your background in technology.</p>
-    </section>
-    <section id="projects" class="container my-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <!-- Repeat this block for each project -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="public/assets/06_mclaren_senna_black_livery_7_resized.jpg" class="card-img-top" alt="Project Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Shoper Service</h5>
-                        <p class="card-text">E-Commmerce Preoject are used Technology is MERN.</p>
-                        <a href="" class="btn btn-primary">View Project</a>
+        </div>
+    </div>
+    <!-- --------About--------    -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="public/assets/136087072.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facilis commodi recusandae,
+                        officiis veniam quisquam vitae nesciunt deserunt maiores? Adipisci consectetur labore quas quos
+                        aperiam? Voluptas autem nulla esse nesciunt.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>MongoDB</span><br>NoSQL DataBase </li>
+                            <li><span>ExpressJS</span><br>Routes And MiddleWear </li>
+                            <li><span>ReactJS</span><br>JavaScript Libraray </li>
+                            <li><span>NodeJS</span><br>JavaScript Runtime Enveriment </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Feb 2024 -Apr 2024 </span><br>Softwear-Enginear Full-Stack Developer at Technomize
+                            </li>
+                            <li><span>Feb 2023 -Feb 2024</span><br>Treainy Full-Stack Developer at Technomize </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>BSC from AIMSR Collage Indore </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="contact" class="container my-5">
-        <h2>Contact</h2>
-        <p>Email: Deepprajapat@gmail.com</p>
-        <p>Mobile: +91 7694994790</p>
-    </section>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
 </body>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablinks.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+    }
+</script>
 </html>
