@@ -14,15 +14,15 @@
         <div id="container">
             <nav>
                 <img src="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About </a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
-                    <i class="fa-solid fa-bars"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>MERN Developer</p>
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="public/assets/136087072.png">
+                    <img src="assets/136087072.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -161,16 +161,17 @@
                         <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
                         <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
                     </div>
-                    <a href="assets/Deepak_NodeJs.pdf" download class="btn btn2"><i
-                            class="fa-solid fa-download"></i> Download CV</a>
+                    <a href="assets/Deepak_NodeJs.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>
+                        Download CV</a>
                 </div>
                 <div class="contact-rigth">
                     <form>
                         <input type="test" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -193,6 +194,37 @@
             event.currentTarget.classList.add('active-link');
             document.getElementById(tabname).classList.add('active-tab')
         }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <!-- --------form data --------- -->
+    <script>
+        const scriptURL = ''
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msq.innerHTML = 'Message sent successfully'
+                    setTimeout(function () {
+                        msg.innerHTML = ''
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
