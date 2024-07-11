@@ -15,7 +15,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(assets);
+  background-image: url(assets/IMG20231223180852.png);
   background-size: cover;
   background-position: center;
 }
@@ -67,6 +67,11 @@ nav ul li a:hover::after {
   margin-top: 20%;
   font-size: 30px;
 }
+.header-text P {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
 
 .header-text h1 {
   font-size: 60px;
@@ -106,6 +111,12 @@ nav ul li a:hover::after {
   font-size: 60px;
   font-weight: 600;
   color: #fff;
+}
+
+.about-col-2 p span {
+  font-size:  17px;
+  font-weight: 300;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .tab-titles {
@@ -361,8 +372,9 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(assets/136087072.png);
-  }
+    background-image: url(assets/IMG2023122318085288.png);
+    background-position: 90%;
+    }
 
   .header-text {
     margin-top: 100%;

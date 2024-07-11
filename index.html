@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio Website ✨</title>
     <link rel="styleSheet" href="styles.css">
@@ -13,7 +14,7 @@
     <div id="header">
         <div id="container">
             <nav>
-                <img src="" class="logo">
+                <img src="assets/Deepak.jpg" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About </a></li>
@@ -25,7 +26,7 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>MERN Developer</p>
+                <p>Full-Stack Developer</p>
                 <h1>Hi, I'm <span>Deepak</span> <br>Prajapat from Indore</h1>
             </div>
         </div>
@@ -35,13 +36,25 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="assets/136087072.png">
+                    <img src="/IMG20210114140011-01.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti facilis commodi recusandae,
-                        officiis veniam quisquam vitae nesciunt deserunt maiores? Adipisci consectetur labore quas quos
-                        aperiam? Voluptas autem nulla esse nesciunt.</p>
+                    <p>
+                        Hello! I'm <span class="spans">Deepak Prajapat</span> a passionate and skilled Full Stack
+                        Developer with expertise in <span>MongoDB, Express.js, React.js, Node.js, HTML, CSS, and
+                            JavaScript</span>. With a strong foundation in Node.js and extensive experience in building
+                        dynamic web applications, I bring both technical proficiency and creativity to my projects.
+                    </p><br>
+                    <p>
+                        Currently, I work at Technomize as a Full Stack Developer, where I thoroughly enjoy my role and
+                        continuously hone my skills. My ability to handle both front-end and back-end development allows
+                        me to deliver seamless and efficient solutions.
+                    </p><br>
+                    <p>
+                        I am dedicated to understanding client needs and translating them into functional, user-friendly
+                        applications. Let's collaborate and bring your vision to life!
+                    </p>
 
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -50,17 +63,54 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>MongoDB</span><br>NoSQL DataBase </li>
-                            <li><span>ExpressJS</span><br>Routes And MiddleWear </li>
-                            <li><span>ReactJS</span><br>JavaScript Libraray </li>
-                            <li><span>NodeJS</span><br>JavaScript Runtime Enveriment </li>
+                            <li><span>NodeJS</span><br>JavaScript Runtime Environment</li>
+                            <li><span>JavaScript</span><br>Programming Language</li>
+                            <li><span>MongoDB</span><br>NoSQL Database</li>
+                            <li><span>Git</span><br>Version Control System</li>
+                            <li><span>ExpressJS</span><br>Routes And Middleware</li>
+                            <li><span>Postman</span><br>API Testing Tool</li>
+                            <li><span>MySQL</span><br>Relational Database Management System</li>
+                            <li><span>HTML & CSS</span><br>Markup and Styling Languages</li>
+                            <li><span>ReactJS</span><br>JavaScript Library</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Feb 2024 -Apr 2024 </span><br>Softwear-Enginear Full-Stack Developer at Technomize
-                            </li>
-                            <li><span>Feb 2023 -Feb 2024</span><br>Treainy Full-Stack Developer at Technomize </li>
+                            <li><span>Aug 2023 - Apr 2024</span><br><span>
+                                    <h3> Software Engineer Full-Stack Developer at Technomize</h3>
+                                </span></li>
+                            <ul>
+                                <li>Designing and developing scalable backend solutions using Node.js and MongoDB.</li>
+                                <li>Implementing RESTful APIs for efficient data transfer and integration with front-end
+                                    applications.</li>
+                                <li>Optimizing database schema design and query performance to enhance application speed
+                                    and efficiency.</li>
+                                <li>Ensuring code quality and adherence to best practices through regular code reviews
+                                    and refactoring.</li>
+                                <li>Collaborating with cross-functional teams to integrate frontend components with
+                                    backend APIs and databases.</li>
+                                <li>Troubleshooting and debugging issues across the software stack to maintain a stable
+                                    and reliable application.</li>
+                                <li>Staying updated with the latest developments in Node.js and MongoDB ecosystems to
+                                    incorporate best practices and new features into projects.</li>
+                            </ul>
+                            <li><span>Feb 2023 - Aug 2023</span><br><span>
+                                    <h3> Software Trainee at Technomize</h3>
+                                </span></li>
+                            <ul>
+                                <li>Designed and implemented RESTful APIs for efficient data transfer and integration
+                                    with front-end applications.</li>
+                                <li>Took part in code reviews to maintain a clean codebase, adhere to best practices,
+                                    and ensure high code quality.</li>
+                                <li>Worked on database schema design and management, utilizing MongoDB for data storage
+                                    and retrieval.</li>
+                                <li>Improved application performance by optimizing queries and data retrieval processes.
+                                </li>
+                                <li>Collaborated with front-end developers to integrate API endpoints and provide
+                                    support for seamless user experiences.</li>
+                                <li>Participated in code reviews, ensuring adherence to code quality standards, best
+                                    practices, and maintaining a clean codebase.</li>
+                            </ul>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
@@ -112,32 +162,44 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="assets/136087072.png">
+                    <img src="assets/Employee.jpg">
                     <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo sed ex cupiditate
-                            reiciendis doloremque aliquid odio id dignissimos sapiente possimus, delectus a
-                            exercitationem est in distinctio perferendis commodi vel!</p>
+                        <h3>Employee-Attendance</h3>
+                        <p>Nodejs-ExpressJs-MySQL</p>
+                        <ul>
+                            <li>Developed a task management application using Node.js and Express.js.</li>
+                            <li>Implemented user authentication using JWT tokens.</li>
+                            <li>Utilized MySQL for data storage and retrieval.</li>
+                            <li>Learning MySQL concurrently to enhance the project.</li>
+                        </ul>
                         <a href="#"></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="assets/136087072.png">
+                    <img src="assets/shoping.jpg">
                     <div class="layer">
-                        <h3>Music App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo sed ex cupiditate
-                            reiciendis doloremque aliquid odio id dignissimos sapiente possimus, delectus a
-                            exercitationem est in distinctio perferendis commodi vel!</p>
-                        <a href="#"></a>
+                        <h3>Shoper-Service </h3>
+                    <p>Node.js-Express.js-MongoDB-ReactJs-Html-Css</p>
+                    <ul>
+                        <li>Created an e-commerce platform with a product foundation.</li>
+                        <li>Implementing user authentication for secure access to the platform.</li>
+                        <li>Learning React.js concurrently to enhance the project’s frontend capabilities.</li>
+                        <li>Deployed the project on MongoDB Atlas for seamless database management.</li>
+                        <li>Handled files with multiple components.</li>
+                    </ul>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="assets/136087072.png">
+                    <img src="assets/Eisher.jpg">
                     <div class="layer">
-                        <h3>Online Shoping App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo explicabo sed ex cupiditate
-                            reiciendis doloremque aliquid odio id dignissimos sapiente possimus, delectus a
-                            exercitationem est in distinctio perferendis commodi vel!</p>
+                        <h3>Tech-Pub (Eicher-Parts)</h3>
+                    <p>Nodejs-ExpressJs-MongoDB</p>
+                    <ul>
+                        <li>Developed a task management application using Node.js and Express.js.</li>
+                        <li>Implemented user authentication using JWT tokens.</li>
+                        <li>Utilized MongoDB for data storage and retrieval.</li>
+                        <li>Handled files with multiple components.</li>
+                    </ul>
                         <a href="#"></a>
                     </div>
                 </div>
@@ -157,8 +219,9 @@
                     <div class="social-icons">
                         <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/deepak-prajapat-developer"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Deepakprajapat769"><i class="fa-brands fa-github"></i></a>
                         <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
                     </div>
                     <a href="assets/Deepak_NodeJs.pdf" download class="btn btn2"><i class="fa-solid fa-download"></i>
